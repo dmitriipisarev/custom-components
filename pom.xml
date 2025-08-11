@@ -16,6 +16,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
+    <generated-sources>target/generated-sources/java</generated-sources>
+    <generated-resources>target/generated-sources/resources</generated-resources>
   </properties>
 
   <dependencyManagement>
@@ -96,6 +98,10 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-component-maven-plugin</artifactId>
         <version>4.4.2</version>
+        <configuration>
+          <sourcesOutputDir>${generated-sources}</sourcesOutputDir>
+          <resourcesOutputDir>${generated-resources}</resourcesOutputDir>
+        </configuration>
         <executions>
           <execution>
             <id>generate</id>
@@ -119,11 +125,11 @@
             </goals>
             <configuration>
               <sources>
-                <source>src/generated/java</source>
+                <source>${generated-sources}</source>
               </sources>
               <resources>
                 <resource>
-                  <directory>src/generated/resources</directory>
+                  <directory>${generated-resources}</directory>
                 </resource>
               </resources>
             </configuration>
