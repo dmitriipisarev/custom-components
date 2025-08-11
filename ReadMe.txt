@@ -1,13 +1,2 @@
-Camel Component Project
-=======================
+[![](https://jitpack.io/v/dmitriipisarev/custom-components.svg)](https://jitpack.io/#dmitriipisarev/custom-components)
 
-This project is a template of a Camel component.
-
-To build this project use
-
-    mvn install
-
-For more help see the Apache Camel documentation:
-
-    https://camel.apache.org/writing-components.html
-    
