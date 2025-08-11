@@ -118,7 +118,7 @@
         <version>3.5.0</version>
         <executions>
           <execution>
-            <phase>initialize</phase>
+            <phase>generate-sources</phase>
             <goals>
               <goal>add-source</goal>
               <goal>add-resource</goal>
