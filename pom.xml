@@ -6,9 +6,9 @@
   <groupId>com.github.dmitriipisarev</groupId>
   <artifactId>custom-components</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1.0.7</version>
 
-  <name>Camel ServletCustom Component</name>
+  <name>Custom Component</name>
   <description>khkhjkh</description>
 
   <properties>
