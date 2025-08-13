@@ -56,6 +56,17 @@
         <artifactId>httpclient</artifactId>
         <version>4.5.14</version>
     </dependency>
+    <dependency>
+        <groupId>com.arakelian</groupId>
+        <artifactId>json-filter</artifactId>
+        <version>4.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.30</version>
+        <optional>true</optional>
+    </dependency>
     
     <!-- logging -->
     <dependency>
