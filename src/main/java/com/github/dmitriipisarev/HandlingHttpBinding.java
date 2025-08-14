@@ -5,7 +5,6 @@ import com.arakelian.json.JsonFilter;
 import com.arakelian.json.JsonReader;
 import com.arakelian.json.JsonWriter;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.camel.Exchange;
@@ -19,7 +18,6 @@ import java.io.StringWriter;
 import java.util.List;
 
 @Slf4j
-@ApplicationScoped
 public class HandlingHttpBinding extends DefaultHttpBinding {
     public HandlingHttpBinding(ServletCustomFilterStrategy servletCustomFilterStrategy) {
         super();

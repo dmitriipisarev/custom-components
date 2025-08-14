@@ -43,15 +43,20 @@
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-support</artifactId>
     </dependency>
-    <!-- <dependency>
+    <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-servlet</artifactId>
-    </dependency> -->
+    </dependency>
     <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.0.0</version>
+    </dependency>
+    <!-- <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-servlet</artifactId>
         <version>${runtime.version}</version>
-    </dependency>
+    </dependency> -->
 
     <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -157,11 +162,11 @@
                   <artifactId>lombok</artifactId>
                   <version>${lombok.version}</version>
                 </path>
-                <path>
+                <!-- <path>
                   <groupId>io.quarkus</groupId>
                   <artifactId>quarkus-extension-processor</artifactId>
                   <version>${quarkus.version}</version>
-                </path>
+                </path> -->
             </annotationProcessorPaths>
             <compilerArgs>
                 <arg>-AlegacyConfigRoot=true</arg>
@@ -177,10 +182,10 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-extension-maven-plugin</artifactId>
-      </plugin>
+      </plugin> -->
 
     </plugins>
     <pluginManagement>

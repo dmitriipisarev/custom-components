@@ -3,12 +3,9 @@ package com.github.dmitriipisarev;
 import org.apache.camel.Exchange;
 import org.apache.camel.http.common.HttpHeaderFilterStrategy;
 
-import jakarta.enterprise.context.ApplicationScoped;
-
 import java.util.Collection;
 import java.util.List;
 
-@ApplicationScoped
 public class ServletCustomFilterStrategy extends HttpHeaderFilterStrategy {
     private static final Collection<String> FILTERED_HEADERS = List.of(
         "span-id",
